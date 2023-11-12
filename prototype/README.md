@@ -21,3 +21,15 @@ We want to focus on the first two to begin with.
 #### Language Programming Interface and Execution
 1. Providing the plumbing (Pythonic Library) so that interacting with any API should be a matter of a few lines of code.
 2. Providing an execution framework so that eventually the function call can be natively executed.
+
+#### Demonstration
+
+```
+import funclib.lib
+
+chat_response = agent.chat_completion_request(
+    messages, functions=funclib.lib.funcs()
+)
+```
+
+![Demo](https://drive.google.com/file/d/1Sw8hJGTyxZmRktlfCQSnPGZlbBizDtty/view?usp=sharing)
