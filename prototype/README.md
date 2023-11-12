@@ -14,8 +14,17 @@ A wide range of use cases can be boiled down to just interfacing with APIs bette
 
 To this end, we introduce a new paradigm -  Language Programming Interface.
 
-#### Service providers should provide service. Language models should provide language. Let us provide the interface, the plumbing, the roads.
+#### Service providers should provide service. Language models should provide language. Developers should not have to plumb. Let us provide the interface -- the plumbing, the roads.
 
-We want to be the language infrastructure company for you. We believe the companies that build the services should continue to build world class services. We believe, the service providers, such as Stripe or Twitter or Shopify or Instagram should focus on what they do best - building the services.
+We want to be the language infrastructure company for you.
 
-#### Language Programming Interface
+#### Okay, but, specifically, what are we trying to solve?
+There are the following few problems that we face when developing LLM based applications:
+* For every existing and new API you need to plumb the function signatures
+* This is not a problem that the LLM creator should solve
+* This is not a problem the API provider should solve
+* This is not a problem the Developer should solve
+
+#### Language Programming Interface (free, open source)
+
+#### Language Programming Execution (paid)
