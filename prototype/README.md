@@ -31,4 +31,4 @@ chat_response = agent.chat_completion_request(
     messages, functions=funclib.lib.funcs()
 )
 ```
-[streamlit-demo-2023-11-12-12-11-50.webm](https://github.com/rishabhranawat/func/assets/10802684/cfde71a1-aea2-4fbf-be1f-99ae1a47086f)
+[Prototype Demo](https://github.com/rishabhranawat/func/assets/10802684/cfde71a1-aea2-4fbf-be1f-99ae1a47086f)
