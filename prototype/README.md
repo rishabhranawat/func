@@ -6,7 +6,7 @@ APIs are the highways of modern day internet architecture. APIs are great, howev
 
 We at func want to develop the next frontier of APIs and we call these Language Programming Interfaces (LPIs).
 
-#### Service providers should provide service. Language models should provide language. Developers should not have to plumb. Let us provide the interface -- the plumbing/the roads.
+#### Service providers should provide service. Language models should provide language. Developers should not have to plumb. Let us provide the interface, the plumbing, the roads.
 
 Three main veins:
 * For every existing and new API a developer needs to do a great deal of arduous plumbing.
