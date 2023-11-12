@@ -1,9 +1,5 @@
 import agent
-import news
-import gmail
-import gmail_calendar
-import lib
-
+import funclib.lib
 import streamlit as st 
 
 st.title('LPI - Language Programming Interface')
@@ -19,14 +15,8 @@ if query:
     messages.append({"role": "user", \
         "content": query})
 
-    funcs = []
-    funcs.extend(news.funcs())
-    funcs.extend(gmail.funcs())
-    funcs.extend(lib.funcs())
-    funcs.extend(gmail_calendar.funcs())
-
     chat_response = agent.chat_completion_request(
-        messages, functions=funcs
+        messages, functions=funclib.lib.funcs()
     )
     print(chat_response.json())
     assistant_message = chat_response.json()["choices"][0]["message"]
