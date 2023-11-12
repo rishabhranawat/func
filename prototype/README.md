@@ -25,6 +25,11 @@ There are the following few problems that we face when developing LLM based appl
 * This is not a problem the API provider should solve
 * This is not a problem the Developer should solve
 
-#### Language Programming Interface (free, open source)
+#### Language Programming Interface and Execution
+We will build a library that will do the plumbing for the most important and critical APIs. We will be LLM agnostic but begin with OpenAI. This will be provided as an open source library that developers can use to build applications.
 
-#### Language Programming Execution (paid)
+There are two parts:
+1.) Understanding which function a particular language query wants to execute
+2.) To actually execute that query
+
+(2.) requires deployment integrations etc.,
