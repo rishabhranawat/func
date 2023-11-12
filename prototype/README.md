@@ -19,6 +19,5 @@ Three main veins:
 We want to focus on the first two to begin with.
 
 #### Language Programming Interface and Execution
-There are two parts:
 1. Providing the plumbing (Pythonic Library) so that interacting with any API should be a matter of a few lines of code.
 2. Providing an execution framework so that eventually the function call can be natively executed.
