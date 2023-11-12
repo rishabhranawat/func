@@ -8,6 +8,7 @@ import openai
 import lib
 import news
 import gmail
+import gmail_calendar
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 GPT_MODEL = "gpt-3.5-turbo"
@@ -41,12 +42,13 @@ messages.append({"role": "system", \
 	Infer certain arguments as appropriate."})
 
 messages.append({"role": "user", \
-	"content": "Do I have any recent emails?"})
+	"content": "Do I have any upcoming events?"})
 
 funcs = []
 funcs.extend(news.funcs())
 funcs.extend(gmail.funcs())
 funcs.extend(lib.funcs())
+funcs.extend(gmail_calendar.funcs())
 
 chat_response = chat_completion_request(
 	messages, functions=funcs
