@@ -4,7 +4,10 @@ import os
 
 import requests
 import openai
-from lib import functions
+
+import lib
+import news
+import gmail
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 GPT_MODEL = "gpt-3.5-turbo"
@@ -35,15 +38,19 @@ messages = []
 
 messages.append({"role": "system", \
 	"content": "Don't make assumptions about what values to plug into functions. \
-	Ask for clarification if a user request is ambiguous."})
+	Infer certain arguments as appropriate."})
 
 messages.append({"role": "user", \
-	"content": "What's the weather like today in Glasgow"})
+	"content": "Do I have any recent emails?"})
+
+funcs = []
+funcs.extend(news.funcs())
+funcs.extend(gmail.funcs())
+funcs.extend(lib.funcs())
 
 chat_response = chat_completion_request(
-	messages, functions=functions()
+	messages, functions=funcs
 )
+print(chat_response.json())
 assistant_message = chat_response.json()["choices"][0]["message"]
 messages.append(assistant_message)
-print(assistant_message)
-

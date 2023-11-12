@@ -1,5 +1,5 @@
 
-def functions():
+def funcs():
 	functions = [
 		{
 			"name": "get_current_weather",
