@@ -14,4 +14,8 @@ A wide range of use cases can be boiled down to just interfacing with APIs bette
 
 To this end, we introduce a new paradigm -  Language Programming Interface.
 
+#### Service providers should provide service. Language models should provide language. Let us provide the interface, the plumbing, the roads.
+
+We want to be the language infrastructure company for you. We believe the companies that build the services should continue to build world class services. We believe, the service providers, such as Stripe or Twitter or Shopify or Instagram should focus on what they do best - building the services.
+
 #### Language Programming Interface
